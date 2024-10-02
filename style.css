@@ -89,7 +89,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Moves content to the top */
-    align-items: start;
+    align-items: center;
     margin-bottom: 80px;/* Reduced padding to move content higher */
     padding-bottom: 0;
 }
@@ -104,8 +104,8 @@ body {
 }
 
 .envelope-body .spotify-link img {
-    height: 30px;
-    width: 30px;
+    height: 42px;
+    width: 42px;
     vertical-align: middle;
 }
 
@@ -119,6 +119,10 @@ body {
 .envelope-body .letter-content #recipient-name,
 .envelope-body .letter-content #sender-name {
     font-weight: bold;
+}
+
+.envelope-body .letter-content a{
+    text-decoration: underline;
 }
 
 .shadow {
@@ -154,22 +158,6 @@ body {
 .envelope:hover .shadow {
     height: 270px;
 }
-button, a {
-    border: none;
-    text-decoration: none;
-    font-family: "Verdana";
-    font-size: 14px;
-    background: transparent;
-    color: #000;
-    padding: 3px 5px;
-    width: 75px;
-    border-radius: 3px;
-    display: inline-block;
-    text-align: center;
-  }
 
-  button:hover, a:hover {
-    background: #ccc;
-  }
 
   
