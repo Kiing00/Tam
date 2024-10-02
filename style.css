@@ -89,7 +89,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Moves content to the top */
-    align-items: center;
+    align-items: start;
     margin-bottom: 80px;/* Reduced padding to move content higher */
     padding-bottom: 0;
 }
@@ -144,7 +144,7 @@ body {
 }
 
 .envelope:hover .envelope-body .letter {
-    height: 420px;
+    height: 390px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -154,3 +154,22 @@ body {
 .envelope:hover .shadow {
     height: 270px;
 }
+button, a {
+    border: none;
+    text-decoration: none;
+    font-family: "Verdana";
+    font-size: 14px;
+    background: transparent;
+    color: #000;
+    padding: 3px 5px;
+    width: 75px;
+    border-radius: 3px;
+    display: inline-block;
+    text-align: center;
+  }
+
+  button:hover, a:hover {
+    background: #ccc;
+  }
+
+  

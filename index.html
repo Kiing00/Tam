@@ -11,18 +11,22 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
 
-        <div class="envelope">
+        <div id="run"  class="envelope">
             <div class="envelope-body">
                 <div class="back-fold"></div>
                 <div class="letter">
                     <div class="letter-body"></div>
                     <div class="letter-title"></div>
                     <div class="letter-context"></div>
-                    <div class="letter-content">
+                    <div class="confett-container">
+                        <div class="confetti-heart"></div>
+                    <div  class="letter-content">
+                       
                         <p>Hi <span id="recipient-name">Tam</span>,</p><br>
                         <p>I hope this letter finds you well.</p> 
                         <p>Here is the playlist I made for you</p>
@@ -34,6 +38,7 @@
                         <p>From,</p>
                         <p><span id="sender-name">Spade</span></p>
                     </div>
+                </div>
                     <div class="letter-stamp">
                         <div class="letter-stamp-inner"></div>
                     </div>
@@ -43,10 +48,47 @@
                 <div class="left-fold"></div>
             </div>
             <div class="shadow"></div>
+            <!-- <button id="run">Run</button> -->
         </div>
 
 
         
-        <script src="" async defer></script>
+       
+    
+<script type="module">
+    import { confetti } from "https://cdn.jsdelivr.net/npm/tsparticles-confetti/+esm";
+  
+    const run = () => {
+      const defaults = {
+        spread: 460,
+        ticks: 100,
+        gravity: 1,
+        decay: 0.94,
+        startVelocity: 30,
+        shapes: ["heart"],
+        colors: ["FF90BC", "FFC0D9", "F9F9E0", "8ACDD7"]
+      };
+  
+      confetti({
+        ...defaults,
+        particleCount: 50,
+        scalar: 2
+      });
+  
+      confetti({
+        ...defaults,
+        particleCount: 25,
+        scalar: 3
+      });
+  
+      confetti({
+        ...defaults,
+        particleCount: 10,
+        scalar: 4
+      });
+    };
+  
+    document.getElementById("run").addEventListener("mouseenter", run);
+  </script>
     </body>
 </html>
