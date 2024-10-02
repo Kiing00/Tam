@@ -121,7 +121,7 @@ body {
     font-weight: bold;
 }
 
-.envelope-body .letter-content a{
+.envelope-body a{
     text-decoration: underline;
 }
 
